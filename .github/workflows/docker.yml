@@ -21,9 +21,6 @@ jobs:
     - name: Publish docker image
       run: |
         docker push serchengine/tenywebci:latest
-    - name: Publish docker image
-      run: |
-        docker push serchengine/tenywebci:latest
     - name: App service auth
       uses: azure/webapps-deploy@v2
       with:
