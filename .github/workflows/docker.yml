@@ -21,9 +21,3 @@ jobs:
     - name: Publish docker image
       run: |
         docker push serchengine/tenywebci:lates
-    - name: App service auth
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'tenywebapp '
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        images: 'serchengine/tenywebci:lates'
