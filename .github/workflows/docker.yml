@@ -20,4 +20,4 @@ jobs:
         docker build --platform linux --tag serchengine/tenywebci:latest -f ci/dockerfile .
     - name: Publish docker image
       run: |
-        docker push serchengine/tenywebci:lates
+        docker push serchengine/tenywebci:latest
